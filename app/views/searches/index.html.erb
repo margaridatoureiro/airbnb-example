@@ -1,0 +1,11 @@
+ <% @results.each do |result| %>
+    <% if result.searchable_type == "User" %>
+    <p><%= link_to result.searchable.first_name, user_path(find_user(result.searchable_id)) %></p>
+    <% end %>
+ <% end %>
+  <% @results.each do |result| %>
+    <% if result.searchable_type == "Flat" %>
+    <p><%= link_to result.searchable.name, flat_path(find_flat(result.searchable_id)) %></p>
+    <% end %>
+ <% end %>
+

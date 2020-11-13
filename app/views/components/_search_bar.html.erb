@@ -1,0 +1,5 @@
+<div class="form-inline">
+<!--- <%= form_tag flats_path %>-->
+<%= form_tag searches_index_path, method: :get %>
+<%= text_field_tag :query, params[:query], class: 'form-control', placeholder: 'Find yours' %><%= submit_tag "Search for a flat", class: 'btn btn-primary' %>
+</div>

@@ -1,0 +1,7 @@
+<div class="container">
+  <ul>
+    <% @flats.each do |flat| %>
+    <li><%= link_to "#{flat.name}", flat_path(flat) %></li>
+    <% end %>
+  </ul>
+</div>

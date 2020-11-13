@@ -1,0 +1,8 @@
+
+<%= @user.first_name %>
+<%= @user.last_name %>
+<%= @user.email %>
+<%= @user.role %>
+<% @user.flats.each do |flat| %>
+<%= link_to flat.name, flat_path(flat) %>
+<% end %>
